@@ -1,0 +1,29 @@
+<div class="row">
+    <div class="col-sm-4 offset-md-4">
+        <div class="card card-header text-white bg-dark">
+            Registrar Producto
+        </div>
+        <div class="card card-body">
+            <form (submit)="guardarProducto()">
+                <div class="form-group m-3">
+                    <label for="name"><b>Producto:</b></label>
+                    <input type="text" class="form-control" placeholder="Nombre del Producto"
+                    name="name" [(ngModel)] = "product.name" autofocus>
+                </div>
+                <div class="form-group m-3">
+                    <label for="code"><b>Codigo:</b></label>
+                    <input type="text" class="form-control" placeholder="Codigo del Producto"
+                    name="code" [(ngModel)] = "product.code">
+                </div>
+                <div class="form-group m-3 text-center">
+                    <button class="btn btn-success btn-block">
+                        Guardar
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<div class="mt-4">
+    <app-product-list></app-product-list>
+</div>
