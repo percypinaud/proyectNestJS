@@ -1,0 +1,20 @@
+<div>
+    <table class="table table-hover">
+        <thead class="table-success">
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">ID</th>
+            <th scope="col">Codigo</th>
+            <th scope="col">Nombre</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let p of products;let i = index">
+            <th scope="row">{{i+1}}</th>
+            <th>{{p._id}} </th>
+            <td>{{p.code}} </td>
+            <td>{{p.name}} </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
